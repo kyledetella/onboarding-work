@@ -26,6 +26,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
+	    console.log('fr')
       client.addResponse('app:response:name:apology/untrained')
       client.done()
     }
@@ -33,7 +34,7 @@ exports.handle = function handle(client) {
 
   client.runFlow({
     classifications: {
-			// map inbound message classifications to names of streams
+	// map inbound message classifications to names of streams
     },
     autoResponses: {
       // configure responses to be automatically sent as predicted by the machine learning model
